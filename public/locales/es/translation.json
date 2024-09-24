@@ -1,0 +1,9 @@
+{
+  "title": "Aplicación en varios idiomas",
+  "label": "Selecciona otro lenguaje!",
+  "about": "Sobre mí",
+  "home": "Inicio",
+  "Select another language": "seleccione otro idioma",
+  "using 18next and redux": "usando 18next y redux",
+  "About": "Acerca de"
+}

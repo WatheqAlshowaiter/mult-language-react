@@ -1,0 +1,9 @@
+{
+  "title": "Multi-language app",
+  "label": "Select another language!",
+  "about": "About",
+  "home": "Home",
+  "Select another language": "select another language",
+  "using 18next and redux": "using 18next and redux",
+  "About": "About"
+}
