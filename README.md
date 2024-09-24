@@ -8,4 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-This is multi-languages react app using i18next, and redux
+This is multi-languages react app using i18next, and redux. In the [with-react-context branch](https://github.com/WatheqAlshowaiter/multi-language-react/tree/with-react-context) you can find the same app but using react context instead of redux.
