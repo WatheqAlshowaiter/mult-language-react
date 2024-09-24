@@ -1,32 +1,25 @@
 import { NavLink } from "react-router-dom";
 import { LANGUAGES } from "../constants";
 import { useTranslation } from "react-i18next";
-import { useDispatch, useSelector } from 'react-redux';
 import i18next from "i18next";
+import { useLanguageContext } from '../contexts/LanguageContexts';
+
 
 
 const isActive = ({ isActive }) => `link ${isActive ? "active" : ""}`;
 
 export const Menu = () => {
   const { i18n, t } = useTranslation();
-
-  const onChangeLang = (e) => {
-    const lang_code = e.target.value;
-    i18n.changeLanguage(lang_code);
-  };
-
-
-  // switch lanuage using redux
-  const dispatch = useDispatch();
-  const language = useSelector((state) => state.language);
+  const { language, setLanguage } = useLanguageContext();
 
   const switchLanguage = (e) => {
     const lang = e.target.value;
 
-    dispatch({ type: 'SET_LANGUAGE', payload: lang });
-    i18n.changeLanguage(lang);
+    setLanguage(lang);
+    i18next.changeLanguage(lang);
     document.body.dir = i18next.dir(lang);
   };
+
 
 
 
